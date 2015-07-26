@@ -13,7 +13,7 @@ public JPACampoDAO() {
 	
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<Campo> findAllbyEstado(String campoEstadoBorrado) {
+	public List<Campo> findAllbyEstado(Integer campoEstadoBorrado) {
 		try {
 			Query query = em.createNamedQuery("Campo.findAllbyEstado");
 			query.setParameter("estadoCampo", campoEstadoBorrado);
